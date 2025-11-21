@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* jshint esversion: 8 */
 const express = require('express');
 const mongoose = require('mongoose');
 const fs = require('fs');
@@ -97,7 +97,7 @@ app.post(
     try {
       data = JSON.parse(req.body);
     } catch (err) {
-      return res.status(400).json({ error: '.invalid JSON' });
+      return res.status(400).json({ error: 'Invalid JSON' });
     }
 
     try {
