@@ -22,7 +22,7 @@ class CarModel(models.Model):
         ('WAGON', 'Wagon'),
         ('HATCHBACK', 'Hatchback'),
     ]
-
+    
     car_type = models.CharField(
         max_length=10,
         choices=CAR_TYPES,
